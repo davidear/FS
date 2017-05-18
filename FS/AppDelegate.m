@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-
-@interface AppDelegate () <UISplitViewControllerDelegate>
+//#import "SAILoginComponent.h"
+#import "FYNewFeatureController.h"
+#import "SAINavigationController.h"
+#import "SAITabBarController.h"
+@interface AppDelegate ()
 
 @end
 
@@ -18,10 +20,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-    UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-    navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
-    splitViewController.delegate = self;
+    UINavigationController *navMain = [[UINavigationController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    [SAILoginComponent sharedSAILoginComponent].mainWindow = self.window;
+//    
+//    [FYNewFeatureController showNewFeatureBeforeRootViewController:self.window
+//                                                          callback:^{
+//                                                              SAINavigationController *navMain = [[SAINavigationController alloc]
+//                                                                                                  initWithRootViewController:[[SAITabBarController alloc] init]];
+//                                                              self.window.rootViewController = navMain;
+//                                                              [self.window makeKeyAndVisible];
+//                                                              // try popup page
+//                                                              dispatch_queue_t serialQueue = dispatch_queue_create("sai.launchPopup", DISPATCH_QUEUE_SERIAL);
+//                                                              dispatch_async(serialQueue, ^{
+//                                                                  
+////                                                                  [SAILaunchPopup popUpNotify:navMain];
+//                                                              });
+//                                                          }];
+
+    
+    self.window.rootViewController = navMain;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -51,17 +70,64 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+#pragma mark RemoteNotification
+//- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+//    // Required
+//    [APService registerDeviceToken:deviceToken];
+//}
+//
+//- (void)application:(UIApplication *)application
+//didReceiveRemoteNotification:(NSDictionary *)userInfo
+//fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+//    void(^tapBlock)(void(^completeHandler)()) = ^(void(^completeHandler)()) { //嵌套
+//        if (completeHandler) {
+//            completeHandler();
+//        }
+//        NSNumber *type = userInfo[@"sai_type"];
+//        if (type.integerValue == 1) {
+//            if (userInfo[@"sai_weburl"] != nil) {
+//                SAIWebPopController * wpc = [[SAIWebPopController alloc] init];
+//                [wpc popupWithLink:userInfo[@"sai_weburl"] type:Present];
+//            }
+//        }
+//    };
+//    if (application.applicationState == UIApplicationStateActive) { // 在前台
+//        CWStatusBarNotification *sbn = [CWStatusBarNotification new];
+//        sbn.notificationStyle = CWNotificationStyleNavigationBarNotification;
+//        sbn.notificationLabelBackgroundColor = [UIColor colorWithHexString:@"f8f8f8"];
+//        sbn.notificationLabelTextColor = [UIColor blackColor];
+//        sbn.notificationAnimationInStyle = CWNotificationAnimationStyleTop;
+//        sbn.notificationAnimationOutStyle = CWNotificationAnimationStyleTop;
+//        __weak typeof(sbn) weakSbn = sbn;
+//        sbn.notificationTappedBlock = ^(void) {
+//            tapBlock(^(void) {
+//                [weakSbn dismissNotification];
+//            });
+//        };
+//        [sbn displayNotificationWithMessage:(userInfo[@"aps"][@"alert"] ? userInfo[@"aps"][@"alert"] : nil) forDuration:5.0f];
+//    }else { // 后台或未启动
+//        tapBlock(nil);
+//    }
+//    NSNumber *badgeNumber = userInfo[@"aps"][@"badge"];
+//    [UIApplication sharedApplication].applicationIconBadgeNumber = badgeNumber.integerValue;
+//    [APService handleRemoteNotification:userInfo];
+//    completionHandler(UIBackgroundFetchResultNewData);
+//}
+//
+//- (void)application:(UIApplication *)application
+//handleActionWithIdentifier:(NSString *)identifier
+//forRemoteNotification:(NSDictionary *)userInfo
+//   withResponseInfo:(NSDictionary *)responseInfo
+//  completionHandler:(void (^)())completionHandler {
+//}
 
-
-#pragma mark - Split view
-
-- (BOOL)splitViewController:(UISplitViewController *)splitViewController collapseSecondaryViewController:(UIViewController *)secondaryViewController ontoPrimaryViewController:(UIViewController *)primaryViewController {
-    if ([secondaryViewController isKindOfClass:[UINavigationController class]] && [[(UINavigationController *)secondaryViewController topViewController] isKindOfClass:[DetailViewController class]] && ([(DetailViewController *)[(UINavigationController *)secondaryViewController topViewController] detailItem] == nil)) {
-        // Return YES to indicate that we have handled the collapse by doing nothing; the secondary controller will be discarded.
-        return YES;
-    } else {
-        return NO;
-    }
-}
+#pragma mark - On Notifications
+//#pragma mark 自定义消息推送
+//- (void)networkDidReceiveMessage:(NSNotification *)notification {
+//    NSDictionary *userInfo = [notification userInfo];
+//    NSString *content = [userInfo valueForKey:@"content"];
+//    NSDictionary *extras = [userInfo valueForKey:@"extras"];
+//    NSString *customizeField1 = [extras valueForKey:@"customizeField1"]; //自定义参数，key是自己定义的
+//}
 
 @end

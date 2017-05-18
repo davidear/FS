@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		262702431ECBEF0D003268F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702421ECBEF0D003268F1 /* main.m */; };
 		262702461ECBEF0D003268F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702451ECBEF0D003268F1 /* AppDelegate.m */; };
-		262702491ECBEF0D003268F1 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702481ECBEF0D003268F1 /* MasterViewController.m */; };
-		2627024C1ECBEF0D003268F1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627024B1ECBEF0D003268F1 /* DetailViewController.m */; };
 		2627024F1ECBEF0D003268F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2627024D1ECBEF0D003268F1 /* Main.storyboard */; };
 		262702511ECBEF0D003268F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 262702501ECBEF0D003268F1 /* Assets.xcassets */; };
 		262702541ECBEF0D003268F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */; };
 		2627025F1ECBEF0D003268F1 /* FSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627025E1ECBEF0D003268F1 /* FSTests.m */; };
 		2627026A1ECBEF0D003268F1 /* FSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702691ECBEF0D003268F1 /* FSUITests.m */; };
+		26EADF581ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */; };
+		26EADF591ECD915800F6F2EF /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF2B1ECD915800F6F2EF /* NSString+MD5.m */; };
+		26EADF661ECD915800F6F2EF /* SAIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF481ECD915800F6F2EF /* SAIUtil.m */; };
+		26EADF671ECD915800F6F2EF /* SAI1PXLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF4B1ECD915800F6F2EF /* SAI1PXLine.m */; };
+		26EADF681ECD915800F6F2EF /* SAITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF4D1ECD915800F6F2EF /* SAITextView.m */; };
+		26EADF901ECD929100F6F2EF /* FYNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF8F1ECD929100F6F2EF /* FYNewFeatureController.m */; };
+		26EADF961ECD934300F6F2EF /* SAINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF931ECD934300F6F2EF /* SAINavigationController.m */; };
+		26EADF971ECD934300F6F2EF /* SAITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF951ECD934300F6F2EF /* SAITabBarController.m */; };
 		68F4AFF9CD5B455354D4A343 /* libPods-FSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B485D9E995A88255FDD93B7 /* libPods-FSUITests.a */; };
 		B8FBD4AC90F3EB278244B8FA /* libPods-FS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1907F40C7C27B8747F14EE /* libPods-FS.a */; };
 		D693302E7A2CC6B773CDB04C /* libPods-FSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FD0BFA77180257E54C476F /* libPods-FSTests.a */; };
@@ -46,10 +52,6 @@
 		262702421ECBEF0D003268F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		262702441ECBEF0D003268F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		262702451ECBEF0D003268F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		262702471ECBEF0D003268F1 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		262702481ECBEF0D003268F1 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		2627024A1ECBEF0D003268F1 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		2627024B1ECBEF0D003268F1 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2627024E1ECBEF0D003268F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		262702501ECBEF0D003268F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		262702531ECBEF0D003268F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,24 @@
 		262702651ECBEF0D003268F1 /* FSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262702691ECBEF0D003268F1 /* FSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSUITests.m; sourceTree = "<group>"; };
 		2627026B1ECBEF0D003268F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26EADF281ECD915800F6F2EF /* JSONValueTransformer+CGStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CGStructs.h"; sourceTree = "<group>"; };
+		26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CGStructs.m"; sourceTree = "<group>"; };
+		26EADF2A1ECD915800F6F2EF /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		26EADF2B1ECD915800F6F2EF /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		26EADF2C1ECD915800F6F2EF /* SAIConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAIConstant.h; sourceTree = "<group>"; };
+		26EADF311ECD915800F6F2EF /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		26EADF471ECD915800F6F2EF /* SAIUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAIUtil.h; sourceTree = "<group>"; };
+		26EADF481ECD915800F6F2EF /* SAIUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAIUtil.m; sourceTree = "<group>"; };
+		26EADF4A1ECD915800F6F2EF /* SAI1PXLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAI1PXLine.h; sourceTree = "<group>"; };
+		26EADF4B1ECD915800F6F2EF /* SAI1PXLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAI1PXLine.m; sourceTree = "<group>"; };
+		26EADF4C1ECD915800F6F2EF /* SAITextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAITextView.h; sourceTree = "<group>"; };
+		26EADF4D1ECD915800F6F2EF /* SAITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAITextView.m; sourceTree = "<group>"; };
+		26EADF8E1ECD929100F6F2EF /* FYNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNewFeatureController.h; sourceTree = "<group>"; };
+		26EADF8F1ECD929100F6F2EF /* FYNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNewFeatureController.m; sourceTree = "<group>"; };
+		26EADF921ECD934300F6F2EF /* SAINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAINavigationController.h; sourceTree = "<group>"; };
+		26EADF931ECD934300F6F2EF /* SAINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAINavigationController.m; sourceTree = "<group>"; };
+		26EADF941ECD934300F6F2EF /* SAITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAITabBarController.h; sourceTree = "<group>"; };
+		26EADF951ECD934300F6F2EF /* SAITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAITabBarController.m; sourceTree = "<group>"; };
 		2B485D9E995A88255FDD93B7 /* libPods-FSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47658FC5BFF7D526E1FA5351 /* Pods-FS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FS/Pods-FS.debug.xcconfig"; sourceTree = "<group>"; };
 		4E11CB321AF55A940553442D /* Pods-FSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSTests/Pods-FSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +119,7 @@
 		262702351ECBEF0C003268F1 = {
 			isa = PBXGroup;
 			children = (
+				26EADF1A1ECD8C1D00F6F2EF /* Reference */,
 				262702401ECBEF0D003268F1 /* FS */,
 				2627025D1ECBEF0D003268F1 /* FSTests */,
 				262702681ECBEF0D003268F1 /* FSUITests */,
@@ -121,16 +142,13 @@
 		262702401ECBEF0D003268F1 /* FS */ = {
 			isa = PBXGroup;
 			children = (
+				26EADF1E1ECD915800F6F2EF /* Common */,
+				26EADF321ECD915800F6F2EF /* Helper */,
+				26EADF491ECD915800F6F2EF /* Public */,
+				26EADF1C1ECD8CA500F6F2EF /* Model */,
+				26EADF1D1ECD8CA500F6F2EF /* Module */,
 				262702441ECBEF0D003268F1 /* AppDelegate.h */,
 				262702451ECBEF0D003268F1 /* AppDelegate.m */,
-				262702471ECBEF0D003268F1 /* MasterViewController.h */,
-				262702481ECBEF0D003268F1 /* MasterViewController.m */,
-				2627024A1ECBEF0D003268F1 /* DetailViewController.h */,
-				2627024B1ECBEF0D003268F1 /* DetailViewController.m */,
-				2627024D1ECBEF0D003268F1 /* Main.storyboard */,
-				262702501ECBEF0D003268F1 /* Assets.xcassets */,
-				262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */,
-				262702551ECBEF0D003268F1 /* Info.plist */,
 				262702411ECBEF0D003268F1 /* Supporting Files */,
 			);
 			path = FS;
@@ -139,6 +157,10 @@
 		262702411ECBEF0D003268F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2627024D1ECBEF0D003268F1 /* Main.storyboard */,
+				262702501ECBEF0D003268F1 /* Assets.xcassets */,
+				262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */,
+				262702551ECBEF0D003268F1 /* Info.plist */,
 				262702421ECBEF0D003268F1 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -160,6 +182,82 @@
 				2627026B1ECBEF0D003268F1 /* Info.plist */,
 			);
 			path = FSUITests;
+			sourceTree = "<group>";
+		};
+		26EADF1A1ECD8C1D00F6F2EF /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		26EADF1C1ECD8CA500F6F2EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26EADF1D1ECD8CA500F6F2EF /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF911ECD934300F6F2EF /* Base */,
+				26EADF8D1ECD929100F6F2EF /* Introduce */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		26EADF1E1ECD915800F6F2EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF281ECD915800F6F2EF /* JSONValueTransformer+CGStructs.h */,
+				26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */,
+				26EADF2A1ECD915800F6F2EF /* NSString+MD5.h */,
+				26EADF2B1ECD915800F6F2EF /* NSString+MD5.m */,
+				26EADF2C1ECD915800F6F2EF /* SAIConstant.h */,
+				26EADF311ECD915800F6F2EF /* Singleton.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		26EADF321ECD915800F6F2EF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF471ECD915800F6F2EF /* SAIUtil.h */,
+				26EADF481ECD915800F6F2EF /* SAIUtil.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		26EADF491ECD915800F6F2EF /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF4A1ECD915800F6F2EF /* SAI1PXLine.h */,
+				26EADF4B1ECD915800F6F2EF /* SAI1PXLine.m */,
+				26EADF4C1ECD915800F6F2EF /* SAITextView.h */,
+				26EADF4D1ECD915800F6F2EF /* SAITextView.m */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		26EADF8D1ECD929100F6F2EF /* Introduce */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF8E1ECD929100F6F2EF /* FYNewFeatureController.h */,
+				26EADF8F1ECD929100F6F2EF /* FYNewFeatureController.m */,
+			);
+			path = Introduce;
+			sourceTree = "<group>";
+		};
+		26EADF911ECD934300F6F2EF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				26EADF921ECD934300F6F2EF /* SAINavigationController.h */,
+				26EADF931ECD934300F6F2EF /* SAINavigationController.m */,
+				26EADF941ECD934300F6F2EF /* SAITabBarController.h */,
+				26EADF951ECD934300F6F2EF /* SAITabBarController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		2DCF9998208C419068AD4AF4 /* Pods */ = {
@@ -465,10 +563,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26EADF961ECD934300F6F2EF /* SAINavigationController.m in Sources */,
+				26EADF971ECD934300F6F2EF /* SAITabBarController.m in Sources */,
+				26EADF591ECD915800F6F2EF /* NSString+MD5.m in Sources */,
+				26EADF671ECD915800F6F2EF /* SAI1PXLine.m in Sources */,
 				262702461ECBEF0D003268F1 /* AppDelegate.m in Sources */,
-				262702491ECBEF0D003268F1 /* MasterViewController.m in Sources */,
+				26EADF681ECD915800F6F2EF /* SAITextView.m in Sources */,
+				26EADF581ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m in Sources */,
+				26EADF661ECD915800F6F2EF /* SAIUtil.m in Sources */,
 				262702431ECBEF0D003268F1 /* main.m in Sources */,
-				2627024C1ECBEF0D003268F1 /* DetailViewController.m in Sources */,
+				26EADF901ECD929100F6F2EF /* FYNewFeatureController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +724,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reference/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -632,6 +740,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Reference/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -706,6 +818,7 @@
 				262702701ECBEF0D003268F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		262702711ECBEF0D003268F1 /* Build configuration list for PBXNativeTarget "FSTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +827,7 @@
 				262702731ECBEF0D003268F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		262702741ECBEF0D003268F1 /* Build configuration list for PBXNativeTarget "FSUITests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +836,7 @@
 				262702761ECBEF0D003268F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
