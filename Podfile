@@ -12,6 +12,7 @@ target 'FS' do
   pod 'SVPullToRefresh'
   pod 'Masonry'
   pod 'JSONModel'
+  pod 'HMSegmentedControl'
   
   
   # Pods for FS

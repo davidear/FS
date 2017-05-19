@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - HMSegmentedControl (1.5.3)
   - JSONModel (1.7.0)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
@@ -25,6 +26,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - HMSegmentedControl
   - JSONModel
   - Masonry
   - MBProgressHUD
@@ -34,6 +36,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HMSegmentedControl: 7c6145afb50f26cec5f3243082f6f12b9f41318f
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -41,6 +44,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SVPullToRefresh: ba2e718695a43253d8bea6852d2960097dc15d8c
 
-PODFILE CHECKSUM: 4a96077d637b25cf9858c05d08c4f4b8d5c7bfee
+PODFILE CHECKSUM: 52f38b92252a1bf51e27596dd4f64fc5f0ed3639
 
 COCOAPODS: 1.2.1
