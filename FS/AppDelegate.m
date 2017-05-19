@@ -20,8 +20,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UINavigationController *navMain = [[UINavigationController alloc] init];
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    UINavigationController *navMain = [[UINavigationController alloc] init];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 //    [SAILoginComponent sharedSAILoginComponent].mainWindow = self.window;
 //    
 //    [FYNewFeatureController showNewFeatureBeforeRootViewController:self.window
@@ -39,8 +39,8 @@
 //                                                          }];
 
     
-    self.window.rootViewController = navMain;
-    [self.window makeKeyAndVisible];
+//    self.window.rootViewController = navMain;
+//    [self.window makeKeyAndVisible];
     return YES;
 }
 
