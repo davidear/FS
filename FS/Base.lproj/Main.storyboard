@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="vm4-Il-WUe"/>
+                    <tabBarItem key="tabBarItem" title="" image="live_normal" selectedImage="live_selected" id="vm4-Il-WUe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgz-f1-CgJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +57,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TCU-x1-TYx"/>
+                    <tabBarItem key="tabBarItem" title="订阅" image="subscription_normal" selectedImage="subscription_selected" id="TCU-x1-TYx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbe-l6-2jD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="Fmw-ZH-PeG" id="1WX-PF-RTB"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Fdv-HW-yh6"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="me_normal" selectedImage="me_selected" id="Fdv-HW-yh6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Aa-R5-3M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -95,7 +95,7 @@
         <!--Home-->
         <scene sceneID="qU3-ie-NQX">
             <objects>
-                <viewController storyboardIdentifier="Home" id="D2j-a6-Z0w" userLabel="Home" customClass="FSHomeController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" title="首页" id="D2j-a6-Z0w" userLabel="Home" customClass="FSHomeController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UJV-Dn-qtB"/>
                         <viewControllerLayoutGuide type="bottom" id="9G9-MA-0K9"/>
@@ -105,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="6za-xa-Bz4"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="home_normal" selectedImage="home_selected" id="6za-xa-Bz4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sdi-7U-Vp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +114,7 @@
         <!--Question-->
         <scene sceneID="ffg-rT-Xko">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQm-4f-cuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Q60-vx-HM4" userLabel="Question" customClass="FSQuestionController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MP1-k9-S1n"/>
@@ -124,9 +125,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="W3c-in-6Gy"/>
+                    <tabBarItem key="tabBarItem" title="问答" image="question_normal" selectedImage="question_selected" id="W3c-in-6Gy"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CQm-4f-cuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1743" y="-755"/>
         </scene>
@@ -141,11 +141,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Q60-vx-HM4" kind="relationship" relationship="viewControllers" id="fDf-LX-oWP"/>
-                        <segue destination="1l3-4v-tgc" kind="relationship" relationship="viewControllers" id="OSF-rP-yyW"/>
                         <segue destination="D2j-a6-Z0w" kind="relationship" relationship="viewControllers" id="nFN-9w-qPQ"/>
-                        <segue destination="1Kf-NL-Xp9" kind="relationship" relationship="viewControllers" id="gOE-B7-fRq"/>
-                        <segue destination="Fmw-ZH-PeG" kind="relationship" relationship="viewControllers" id="YyO-sv-r5w"/>
+                        <segue destination="Q60-vx-HM4" kind="relationship" relationship="viewControllers" id="FA1-V4-BAa"/>
+                        <segue destination="1l3-4v-tgc" kind="relationship" relationship="viewControllers" id="pfQ-X5-h1O"/>
+                        <segue destination="1Kf-NL-Xp9" kind="relationship" relationship="viewControllers" id="Cbf-LD-z48"/>
+                        <segue destination="Fmw-ZH-PeG" kind="relationship" relationship="viewControllers" id="w2S-Yg-dco"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ry3-xv-VFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -153,4 +153,16 @@
             <point key="canvasLocation" x="286" y="999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_normal" width="16" height="16"/>
+        <image name="home_selected" width="16" height="16"/>
+        <image name="live_normal" width="16" height="16"/>
+        <image name="live_selected" width="16" height="16"/>
+        <image name="me_normal" width="16" height="16"/>
+        <image name="me_selected" width="16" height="16"/>
+        <image name="question_normal" width="25" height="25"/>
+        <image name="question_selected" width="25" height="25"/>
+        <image name="subscription_normal" width="16" height="16"/>
+        <image name="subscription_selected" width="16" height="16"/>
+    </resources>
 </document>

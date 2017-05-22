@@ -14,6 +14,7 @@
 		262702541ECBEF0D003268F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */; };
 		2627025F1ECBEF0D003268F1 /* FSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627025E1ECBEF0D003268F1 /* FSTests.m */; };
 		2627026A1ECBEF0D003268F1 /* FSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702691ECBEF0D003268F1 /* FSUITests.m */; };
+		266E47401ED28D7100DE8097 /* FSBaseSlidePageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */; };
 		26EADF581ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */; };
 		26EADF591ECD915800F6F2EF /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF2B1ECD915800F6F2EF /* NSString+MD5.m */; };
 		26EADF661ECD915800F6F2EF /* SAIUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF481ECD915800F6F2EF /* SAIUtil.m */; };
@@ -56,6 +57,8 @@
 		26FA7D591ECE8F3F005CDC48 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7D381ECE8F3F005CDC48 /* Reachability.m */; };
 		26FA7D5C1ECE8F3F005CDC48 /* UIDevice+Adaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7D3E1ECE8F3F005CDC48 /* UIDevice+Adaptation.m */; };
 		26FA7D5D1ECE8F3F005CDC48 /* UIImage+Adaptation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7D401ECE8F3F005CDC48 /* UIImage+Adaptation.m */; };
+		26FA7D651ECEC6AE005CDC48 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FA7D641ECEC6AE005CDC48 /* QuartzCore.framework */; };
+		26FA7D681ECEE704005CDC48 /* FSQuestionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7D671ECEE704005CDC48 /* FSQuestionListController.m */; };
 		68F4AFF9CD5B455354D4A343 /* libPods-FSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B485D9E995A88255FDD93B7 /* libPods-FSUITests.a */; };
 		B8FBD4AC90F3EB278244B8FA /* libPods-FS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1907F40C7C27B8747F14EE /* libPods-FS.a */; };
 		D693302E7A2CC6B773CDB04C /* libPods-FSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2FD0BFA77180257E54C476F /* libPods-FSTests.a */; };
@@ -96,6 +99,8 @@
 		262702651ECBEF0D003268F1 /* FSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262702691ECBEF0D003268F1 /* FSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSUITests.m; sourceTree = "<group>"; };
 		2627026B1ECBEF0D003268F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		266E473E1ED28D7100DE8097 /* FSBaseSlidePageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBaseSlidePageContainer.h; sourceTree = "<group>"; };
+		266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBaseSlidePageContainer.m; sourceTree = "<group>"; };
 		26EADF281ECD915800F6F2EF /* JSONValueTransformer+CGStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CGStructs.h"; sourceTree = "<group>"; };
 		26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CGStructs.m"; sourceTree = "<group>"; };
 		26EADF2A1ECD915800F6F2EF /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
@@ -186,6 +191,9 @@
 		26FA7D401ECE8F3F005CDC48 /* UIImage+Adaptation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Adaptation.m"; sourceTree = "<group>"; };
 		26FA7D5F1ECE8FFC005CDC48 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		26FA7D601ECE90A8005CDC48 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		26FA7D641ECEC6AE005CDC48 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		26FA7D661ECEE704005CDC48 /* FSQuestionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSQuestionListController.h; sourceTree = "<group>"; };
+		26FA7D671ECEE704005CDC48 /* FSQuestionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSQuestionListController.m; sourceTree = "<group>"; };
 		2B485D9E995A88255FDD93B7 /* libPods-FSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47658FC5BFF7D526E1FA5351 /* Pods-FS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FS/Pods-FS.debug.xcconfig"; sourceTree = "<group>"; };
 		4E11CB321AF55A940553442D /* Pods-FSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSTests/Pods-FSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26FA7D651ECEC6AE005CDC48 /* QuartzCore.framework in Frameworks */,
 				B8FBD4AC90F3EB278244B8FA /* libPods-FS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +401,8 @@
 				26EADF931ECD934300F6F2EF /* SAINavigationController.m */,
 				26EADF941ECD934300F6F2EF /* SAITabBarController.h */,
 				26EADF951ECD934300F6F2EF /* SAITabBarController.m */,
+				266E473E1ED28D7100DE8097 /* FSBaseSlidePageContainer.h */,
+				266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -437,6 +448,8 @@
 			children = (
 				26FA7CE41ECE879F005CDC48 /* FSQuestionController.h */,
 				26FA7CE51ECE879F005CDC48 /* FSQuestionController.m */,
+				26FA7D661ECEE704005CDC48 /* FSQuestionListController.h */,
+				26FA7D671ECEE704005CDC48 /* FSQuestionListController.m */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -502,6 +515,7 @@
 		6ECD5CDECDC1FA3DA1DF1D95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26FA7D641ECEC6AE005CDC48 /* QuartzCore.framework */,
 				7F1907F40C7C27B8747F14EE /* libPods-FS.a */,
 				F2FD0BFA77180257E54C476F /* libPods-FSTests.a */,
 				2B485D9E995A88255FDD93B7 /* libPods-FSUITests.a */,
@@ -814,10 +828,12 @@
 				26FA7CFF1ECE8DDE005CDC48 /* NewsDetail.m in Sources */,
 				26FA7D4A1ECE8F3F005CDC48 /* GAMarginLabel.m in Sources */,
 				26EADF681ECD915800F6F2EF /* SAITextView.m in Sources */,
+				26FA7D681ECEE704005CDC48 /* FSQuestionListController.m in Sources */,
 				26FA7D501ECE8F3F005CDC48 /* GARefreshTableHeaderView.m in Sources */,
 				26FA7CE61ECE879F005CDC48 /* FSQuestionController.m in Sources */,
 				26FA7D031ECE8DDE005CDC48 /* ReportObj.m in Sources */,
 				26EADF581ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m in Sources */,
+				266E47401ED28D7100DE8097 /* FSBaseSlidePageContainer.m in Sources */,
 				26EADF661ECD915800F6F2EF /* SAIUtil.m in Sources */,
 				26FA7D511ECE8F3F005CDC48 /* GAScrollView.m in Sources */,
 				262702431ECBEF0D003268F1 /* main.m in Sources */,

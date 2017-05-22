@@ -6,8 +6,8 @@
 //  Copyright © 2017年 jason. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FSBaseSlidePageContainer.h"
 
-@interface FSQuestionController : UIViewController
+@interface FSQuestionController : FSBaseSlidePageContainer
 
 @end
