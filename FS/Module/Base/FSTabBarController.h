@@ -1,5 +1,5 @@
 //
-//  SAITabBarController.h
+//  FSTabBarController.h
 //  sai-iOS
 //
 //  Created by DaiFengyi on 15/9/23.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SAITabBarController : UITabBarController
+@interface FSTabBarController : UITabBarController
 //- (void)tackPhotoHandler:(BOOL)isTryCamera feature:(SAIFeatures)features;
 @end

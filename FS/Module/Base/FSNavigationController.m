@@ -8,21 +8,21 @@
 
 #import "SAIConstant.h"
 //#import "SAIGoodsController.h"
-#import "SAINavigationController.h"
-@interface SAINavigationController ()
+#import "FSNavigationController.h"
+@interface FSNavigationController ()
 
 @end
 
-@implementation SAINavigationController
+@implementation FSNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_white"] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbar_white"] forBarMetrics:UIBarMetricsDefault];
     // if set bgimage and tintCoor, will tigger JD SDK bug, it will hide bgimage when close item page
     // self.navigationBar.barTintColor = [UIColor whiteColor];
-    self.navigationBar.tintColor = [UIColor blackColor];
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    self.navigationBar.tintColor = [UIColor colorWithRed:164/255.0 green:173/255.0 blue:181/255.0 alpha:1];
+    self.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor colorWithRed:250/255.0 green:114/255.0 blue:54/255.0 alpha:1]};
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushByNotification:) name:ACTION_PUSH_INTO_NAV object:nil];
 }

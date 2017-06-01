@@ -34,7 +34,7 @@
 
 - (void)setupSubviews {
     [super setupSubviews];
-
+    self.tabBarController.navigationItem.titleView = self.segmentedControl;
 }
 
 

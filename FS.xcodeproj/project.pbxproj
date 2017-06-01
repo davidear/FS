@@ -14,6 +14,7 @@
 		262702541ECBEF0D003268F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */; };
 		2627025F1ECBEF0D003268F1 /* FSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2627025E1ECBEF0D003268F1 /* FSTests.m */; };
 		2627026A1ECBEF0D003268F1 /* FSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 262702691ECBEF0D003268F1 /* FSUITests.m */; };
+		26661C2B1EDFFEF000CD69DD /* FSAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 26661C2A1EDFFEF000CD69DD /* FSAPI.m */; };
 		266E47401ED28D7100DE8097 /* FSBaseSlidePageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */; };
 		26EADF581ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */; };
 		26EADF591ECD915800F6F2EF /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF2B1ECD915800F6F2EF /* NSString+MD5.m */; };
@@ -21,8 +22,8 @@
 		26EADF671ECD915800F6F2EF /* SAI1PXLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF4B1ECD915800F6F2EF /* SAI1PXLine.m */; };
 		26EADF681ECD915800F6F2EF /* SAITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF4D1ECD915800F6F2EF /* SAITextView.m */; };
 		26EADF901ECD929100F6F2EF /* FYNewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF8F1ECD929100F6F2EF /* FYNewFeatureController.m */; };
-		26EADF961ECD934300F6F2EF /* SAINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF931ECD934300F6F2EF /* SAINavigationController.m */; };
-		26EADF971ECD934300F6F2EF /* SAITabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF951ECD934300F6F2EF /* SAITabBarController.m */; };
+		26EADF961ECD934300F6F2EF /* FSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF931ECD934300F6F2EF /* FSNavigationController.m */; };
+		26EADF971ECD934300F6F2EF /* FSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EADF951ECD934300F6F2EF /* FSTabBarController.m */; };
 		26FA7CD91ECE84F9005CDC48 /* FSHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7CD81ECE84F9005CDC48 /* FSHomeController.m */; };
 		26FA7CDC1ECE8527005CDC48 /* FSMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7CDB1ECE8527005CDC48 /* FSMeController.m */; };
 		26FA7CDF1ECE856C005CDC48 /* FSLiveStreamController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FA7CDE1ECE856C005CDC48 /* FSLiveStreamController.m */; };
@@ -99,8 +100,12 @@
 		262702651ECBEF0D003268F1 /* FSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		262702691ECBEF0D003268F1 /* FSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSUITests.m; sourceTree = "<group>"; };
 		2627026B1ECBEF0D003268F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26661C291EDFFEF000CD69DD /* FSAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSAPI.h; sourceTree = "<group>"; };
+		26661C2A1EDFFEF000CD69DD /* FSAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSAPI.m; sourceTree = "<group>"; };
 		266E473E1ED28D7100DE8097 /* FSBaseSlidePageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSBaseSlidePageContainer.h; sourceTree = "<group>"; };
 		266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSBaseSlidePageContainer.m; sourceTree = "<group>"; };
+		269C22751EE0092A00FA6AE2 /* ConfigMacroPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacroPublic.h; sourceTree = "<group>"; };
+		269C22761EE0092A00FA6AE2 /* ConfigMacroSpecial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigMacroSpecial.h; sourceTree = "<group>"; };
 		26EADF281ECD915800F6F2EF /* JSONValueTransformer+CGStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONValueTransformer+CGStructs.h"; sourceTree = "<group>"; };
 		26EADF291ECD915800F6F2EF /* JSONValueTransformer+CGStructs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONValueTransformer+CGStructs.m"; sourceTree = "<group>"; };
 		26EADF2A1ECD915800F6F2EF /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
@@ -115,10 +120,10 @@
 		26EADF4D1ECD915800F6F2EF /* SAITextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAITextView.m; sourceTree = "<group>"; };
 		26EADF8E1ECD929100F6F2EF /* FYNewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYNewFeatureController.h; sourceTree = "<group>"; };
 		26EADF8F1ECD929100F6F2EF /* FYNewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYNewFeatureController.m; sourceTree = "<group>"; };
-		26EADF921ECD934300F6F2EF /* SAINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAINavigationController.h; sourceTree = "<group>"; };
-		26EADF931ECD934300F6F2EF /* SAINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAINavigationController.m; sourceTree = "<group>"; };
-		26EADF941ECD934300F6F2EF /* SAITabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAITabBarController.h; sourceTree = "<group>"; };
-		26EADF951ECD934300F6F2EF /* SAITabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAITabBarController.m; sourceTree = "<group>"; };
+		26EADF921ECD934300F6F2EF /* FSNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNavigationController.h; sourceTree = "<group>"; };
+		26EADF931ECD934300F6F2EF /* FSNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNavigationController.m; sourceTree = "<group>"; };
+		26EADF941ECD934300F6F2EF /* FSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTabBarController.h; sourceTree = "<group>"; };
+		26EADF951ECD934300F6F2EF /* FSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTabBarController.m; sourceTree = "<group>"; };
 		26FA7CD71ECE84F9005CDC48 /* FSHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSHomeController.h; sourceTree = "<group>"; };
 		26FA7CD81ECE84F9005CDC48 /* FSHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSHomeController.m; sourceTree = "<group>"; };
 		26FA7CDA1ECE8527005CDC48 /* FSMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSMeController.h; sourceTree = "<group>"; };
@@ -272,6 +277,8 @@
 		262702411ECBEF0D003268F1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				269C22751EE0092A00FA6AE2 /* ConfigMacroPublic.h */,
+				269C22761EE0092A00FA6AE2 /* ConfigMacroSpecial.h */,
 				2627024D1ECBEF0D003268F1 /* Main.storyboard */,
 				262702501ECBEF0D003268F1 /* Assets.xcassets */,
 				262702521ECBEF0D003268F1 /* LaunchScreen.storyboard */,
@@ -368,6 +375,8 @@
 		26EADF321ECD915800F6F2EF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				26661C291EDFFEF000CD69DD /* FSAPI.h */,
+				26661C2A1EDFFEF000CD69DD /* FSAPI.m */,
 				26EADF471ECD915800F6F2EF /* SAIUtil.h */,
 				26EADF481ECD915800F6F2EF /* SAIUtil.m */,
 			);
@@ -397,10 +406,10 @@
 		26EADF911ECD934300F6F2EF /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				26EADF921ECD934300F6F2EF /* SAINavigationController.h */,
-				26EADF931ECD934300F6F2EF /* SAINavigationController.m */,
-				26EADF941ECD934300F6F2EF /* SAITabBarController.h */,
-				26EADF951ECD934300F6F2EF /* SAITabBarController.m */,
+				26EADF921ECD934300F6F2EF /* FSNavigationController.h */,
+				26EADF931ECD934300F6F2EF /* FSNavigationController.m */,
+				26EADF941ECD934300F6F2EF /* FSTabBarController.h */,
+				26EADF951ECD934300F6F2EF /* FSTabBarController.m */,
 				266E473E1ED28D7100DE8097 /* FSBaseSlidePageContainer.h */,
 				266E473F1ED28D7100DE8097 /* FSBaseSlidePageContainer.m */,
 			);
@@ -803,12 +812,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26EADF961ECD934300F6F2EF /* SAINavigationController.m in Sources */,
+				26EADF961ECD934300F6F2EF /* FSNavigationController.m in Sources */,
 				26FA7CFD1ECE8DDE005CDC48 /* CategoryObj.m in Sources */,
 				26FA7D581ECE8F3F005CDC48 /* NSTool.m in Sources */,
 				26FA7D021ECE8DDE005CDC48 /* ProgramObj.m in Sources */,
 				26FA7D4F1ECE8F3F005CDC48 /* GARefreshTableFooterView.m in Sources */,
-				26EADF971ECD934300F6F2EF /* SAITabBarController.m in Sources */,
+				26EADF971ECD934300F6F2EF /* FSTabBarController.m in Sources */,
 				26FA7D471ECE8F3F005CDC48 /* GAImageCache.m in Sources */,
 				26FA7CFE1ECE8DDE005CDC48 /* CommentObj.m in Sources */,
 				26FA7D5C1ECE8F3F005CDC48 /* UIDevice+Adaptation.m in Sources */,
@@ -820,6 +829,7 @@
 				26FA7D481ECE8F3F005CDC48 /* GAImageLoader.m in Sources */,
 				26FA7D551ECE8F3F005CDC48 /* NSAttributedString+GAExtention.m in Sources */,
 				26FA7D461ECE8F3F005CDC48 /* GAHTTPRequest.m in Sources */,
+				26661C2B1EDFFEF000CD69DD /* FSAPI.m in Sources */,
 				26FA7D531ECE8F3F005CDC48 /* GAVerticallyAlignedLabel.m in Sources */,
 				26FA7D431ECE8F3F005CDC48 /* GAAttributedLabel.m in Sources */,
 				26FA7CD91ECE84F9005CDC48 /* FSHomeController.m in Sources */,

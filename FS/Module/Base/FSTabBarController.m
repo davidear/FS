@@ -9,15 +9,17 @@
 //#import "SAIAuthentication.h"
 #import "SAIConstant.h"
 //#import "SAILoginComponent.h"
-#import "SAITabBarController.h"
+#import "FSTabBarController.h"
 #import "SAIUtil.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface SAITabBarController () <UITabBarControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface FSTabBarController () <UITabBarControllerDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@property (strong, nonatomic) UIBarButtonItem *searchBarButtonItem;
+@property (strong, nonatomic) UIBarButtonItem *scanBarButtonItem;
 @property (nonatomic) SAIFeatures currentFeatur;
 @end
 
-@implementation SAITabBarController
+@implementation FSTabBarController
 #pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,8 +33,18 @@
     self.tabBar.tintColor = [UIColor blackColor];
     [self addNotificationCenterObservers];
 
-    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"feedback"] style:UIBarButtonItemStylePlain target:self action:@selector(feedback:)];
-    self.navigationItem.leftBarButtonItem = leftItem;
+    UIButton * button1 = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 32, 32)];
+    button1.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [button1 setImage:[UIImage imageNamed:@"navi_search"] forState:UIControlStateNormal];
+    [button1 addTarget:self action:@selector(tiaozhuansousuo) forControlEvents:UIControlEventTouchUpInside];
+    self.searchBarButtonItem = [[ UIBarButtonItem alloc ] initWithCustomView :button1];
+    
+    UIButton * button2 = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    button2.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [button2 setImage:[UIImage imageNamed:@"navi_scan"] forState:UIControlStateNormal];
+    [button2 addTarget:self action:@selector(SMerweima) forControlEvents:UIControlEventTouchUpInside];
+    self.scanBarButtonItem = [[ UIBarButtonItem alloc ] initWithCustomView :button2];
+    [self switchNavigationBarStyle:0];
     // badge
     [self onBadgeNumberChanged:nil];
 }
@@ -94,15 +106,29 @@
 //            break;
 //    }
 //}
+
+- (void)switchNavigationBarStyle:(NSInteger)index {
+    switch (index) {
+        case 0:
+            self.title = @"首页";
+            self.navigationItem.titleView = nil;
+            self.navigationItem.leftBarButtonItem = self.searchBarButtonItem;
+            self.navigationItem.rightBarButtonItem = self.scanBarButtonItem;
+            break;
+        case 4:
+            self.title = @"我的";
+            self.navigationItem.titleView = nil;
+        default:
+            self.navigationItem.leftBarButtonItem = nil;
+            self.navigationItem.rightBarButtonItem = nil;
+            break;
+    }
+}
 #pragma mark - TabBarController
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
-    //    if (tabBarController.selectedViewController == viewController) { // 重复点击已选item
-    //        if (tabBarController.selectedIndex == 1) {                   // search
-    //            // need to do some
-    //            [SAIPopMenu showSuccess:nil];
-    //        }
-    //        return NO;
-    //    }
+    if (tabBarController.selectedViewController == viewController) { // 重复点击已选item
+        return NO;
+    }
     
     
 //    if (tabBarController.selectedViewController != viewController && [tabBarController.viewControllers indexOfObject:viewController] == 0) {
@@ -129,7 +155,9 @@
     return YES;
 }
 
-
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    [self switchNavigationBarStyle:tabBarController.selectedIndex];
+}
 #pragma mark - Button Action
 - (void)feedback:(UIBarButtonItem *)sender {
 

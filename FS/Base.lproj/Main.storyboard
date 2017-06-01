@@ -12,7 +12,7 @@
         <!--Navigation Controller-->
         <scene sceneID="NfB-kj-sWU">
             <objects>
-                <navigationController id="p76-HY-0jb" sceneMemberID="viewController">
+                <navigationController id="p76-HY-0jb" customClass="FSNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="INe-P6-xvr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,7 +114,6 @@
         <!--Question-->
         <scene sceneID="ffg-rT-Xko">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CQm-4f-cuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Q60-vx-HM4" userLabel="Question" customClass="FSQuestionController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MP1-k9-S1n"/>
@@ -127,13 +126,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="问答" image="question_normal" selectedImage="question_selected" id="W3c-in-6Gy"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQm-4f-cuJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1743" y="-755"/>
         </scene>
         <!--tab-->
         <scene sceneID="SDu-YO-9XP">
             <objects>
-                <tabBarController title="tab" id="i1J-1M-0QK" sceneMemberID="viewController">
+                <tabBarController title="tab" id="i1J-1M-0QK" customClass="FSTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="q9b-J9-U0F"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="yQ2-n9-aOz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

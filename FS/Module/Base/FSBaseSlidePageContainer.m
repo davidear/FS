@@ -20,9 +20,11 @@
     // Do any additional setup after loading the view.
     [self initData];
     [self initSubviews];
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self setupSubviews];
 }
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
@@ -69,8 +71,6 @@
 }
 
 - (void)setupSubviews {
-    self.tabBarController.navigationItem.titleView = self.segmentedControl;
-    
 }
 
 #pragma mark - SegmentControl

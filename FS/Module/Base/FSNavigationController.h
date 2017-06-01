@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SAINavigationController : UINavigationController
+@interface FSNavigationController : UINavigationController
 
 @end
